@@ -10,7 +10,7 @@ import { LoadingState } from "../ui/loadingState";
 import HomeRecentActivityItem from "./HomeRecentActivityItem";
 import { ACTIVITY_PER_PAGE } from "@/lib/constants";
 import { Activity } from "lucide-react";
-import { domain } from "@/lib/api";
+
 
 interface Props {
   userId: string;
@@ -35,7 +35,7 @@ export default function HomeRecentActivityContainer({ userId, initialData }: Pro
         queryKey: ["getHomeRecentActivity"],
         queryFn: async ({ pageParam = 1 }) => {
           const res = await fetch(
-            `${domain}/api/home-page/get?userId=${userId}&page=${pageParam}&take=${ACTIVITY_PER_PAGE}`
+            `/api/home-page/get?userId=${userId}&page=${pageParam}&take=${ACTIVITY_PER_PAGE}`
           );
           const posts = (await res.json()) as HomeRecentActivity[];
           return posts;
