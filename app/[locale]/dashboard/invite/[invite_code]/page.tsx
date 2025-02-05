@@ -3,17 +3,6 @@ import { prisma } from "@/lib/db";
 import { NotifyType } from "@prisma/client";
 import { redirect } from "next/navigation";
 
-interface PageProps {
-  params: {
-    invite_code: string;
-  };
-  searchParams: {
-    role?: string;
-    shareCode?: string;
-    [key: string]: string | undefined;
-  };
-}
-
 type ValidRole = "admin" | "editor" | "viewer";
 
 interface InviteCodeValidWhere {
@@ -23,7 +12,13 @@ interface InviteCodeValidWhere {
   canEditCode?: string;
 }
 
-async function Workspace({ params, searchParams }: PageProps) {
+async function Workspace({
+  params,
+  searchParams,
+}: {
+  params: { invite_code: string };
+  searchParams: { [key: string]: string | undefined };
+}) {
   const { invite_code } = await params;
   const session = await checkifUserCompletedOnboarding(
     `/dashboard/invite/${invite_code}`
