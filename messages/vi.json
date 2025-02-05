@@ -1,0 +1,907 @@
+{
+  "Index": {
+    "title": "Xin chào thế giới!"
+  },
+  "NOT_FOUND": {
+    "TITLE": "Không thể tìm thấy trang",
+    "DESC": "Xin lỗi, chúng tôi không thể tìm thấy trang. Bạn sẽ phát hiện nhiều thứ khác khi khám phá trên trang chủ.",
+    "BACK": "Về",
+    "HOME_PAGE": "Trang chủ"
+  },
+  "AUTH": {
+    "EMAIL": "Email",
+    "PASSWORD": "Mật khẩu",
+    "USERNAME": "Tên đăng nhập",
+    "SIGN_IN": {
+      "TITLE": "Đăng nhập",
+      "DESC": "Chào mừng trở lại ....",
+      "SUBMIT_BTN": "Đăng nhập",
+      "FORGOT_PASSWORD": "Quên mật khẩu?",
+      "DONT_HAVE_ACCOUNT": {
+        "FIRST": "Chưa có tài khoản?",
+        "SECOND": "Đăng ký"
+      },
+      "PROVIDERS": {
+        "GOOGLE": "Đăng nhập bằng Google",
+        "APPLE": "Đăng nhập bằng Apple",
+        "GITHUB": "Đăng nhập bằng Github"
+      }
+    },
+    "SIGN_UP": {
+      "TITLE": "Đăng ký",
+      "DESC": "Tạo tài khoản",
+      "SUBMIT_BTN": "Đăng ký",
+      "FORGOT_PASSWORD": "Quên mật khẩu?",
+      "HAVE_ACCOUNT": {
+        "FIRST": "Đã có tài khoản?",
+        "SECOND": "Đăng nhập"
+      },
+      "TERMS": {
+        "FIRST": "Khi đăng ký, bạn đồng ý với",
+        "SECOND": "Điều khoản dịch vụ"
+      },
+      "PROVIDERS": {
+        "GOOGLE": "Đăng ký bằng Google",
+        "APPLE": "Đăng ký bằng Apple",
+        "GITHUB": "Đăng ký bằng Github"
+      }
+    },
+    "NEW_WORKSPACE": {
+      "INPUTS": {
+        "NAME": "Tên không gian làm việc",
+        "FILE": "Biểu tượng không gian làm việc (tuỳ chọn)"
+      },
+      "PLACEHOLDERS": {
+        "NAME": "ví dụ: OpenStudio"
+      },
+      "IMAGE": "Chỉ hỗ trợ các loại tệp .jpeg, .jpg, .png, .webp, .gif",
+      "BTN_ADD": "Tạo mới",
+      "BTN_PENDING": "Đang tạo. Vui lòng chờ"
+    }
+  },
+  "CHANGE_PROFILE_IMAGE": {
+    "TITLE": "Gửi một bức ảnh!",
+    "BUTTON": "Chọn một bức ảnh",
+    "HOVER": "Thay đổi ảnh"
+  },
+  "ONBOARDING_FORM": {
+    "FIRST_STEP": {
+      "TITLE": {
+        "FIRST": "Hãy chuẩn bị cho bạn",
+        "SECOND": "sẵn sàng"
+      },
+      "PHOTO": "Thêm ảnh",
+      "INPUTS": {
+        "NAME": "Tên",
+        "SURNAME": "Họ"
+      },
+      "PLACEHOLDER": {
+        "NAME": "Khánh",
+        "SURNAME": "Phạm"
+      }
+    },
+    "SECOND_STEP": {
+      "TITLE": "Bạn sẽ sử dụng",
+      "INFO": "Chúng tôi sử dụng thông tin này để cá nhân hóa trải nghiệm của bạn",
+      "WORK": "Dành cho công việc",
+      "STUDY": "Dành cho học tập",
+      "PERSONAL": "Dành cho mục đích cá nhân"
+    },
+    "THIRD_STEP": {
+      "TITLE": "Tạo không gian làm việc",
+      "INPUTS": {
+        "NAME": "Tên không gian làm việc",
+        "FILE": "Biểu tượng không gian làm việc (tuỳ chọn)"
+      },
+      "PLACEHOLDERS": {
+        "NAME": "ví dụ: Open Studio"
+      },
+      "IMAGE": "Chỉ hỗ trợ các loại tệp .jpeg, .jpg, .png, .webp, .gif"
+    },
+    "FINISH": {
+      "TITLE": "Xong rồi!",
+      "DESC_FIRST": "Bạn đã có thể bắt đầu sử dụng",
+      "DESC_SECOND": "bằng cách nhấn nút dưới đây"
+    },
+    "START_BTN": "Bắt đầu",
+    "NEXT_BTN": "Tiếp tục",
+    "IS_DONE": "chỉ một chút nữa thôi"
+  },
+  "UPLOAD_FILE": {
+    "UPLOAD": "Tải lên"
+  },
+  "INVITE": {
+    "HINT": "Mời vào không gian làm việc",
+    "INVITE": "Mời",
+    "TITLE": "Mời vào",
+    "DESC": "Sao chép liên kết mời và gửi cho những người bạn muốn mời vào không gian làm việc này. Bạn có thể thiết lập vai trò và tạo liên kết mới."
+  },
+  "LEAVE_FROM_WORKSPACE": {
+    "LEAVE": "Rời đi",
+    "TITLE": "Rời khỏi",
+    "DESC": "Bạn có thể rời khỏi không gian làm việc bất cứ lúc nào nhưng chỉ có thể quay lại khi được mời.",
+    "WARNING": "Tất cả các nhiệm vụ và sơ đồ tư duy từ không gian làm việc này đã được thêm vào tab “Đã đánh dấu sao” sẽ bị xóa khỏi nó. Điều tương tự cũng áp dụng với các hoạt động đã được giao cho bạn.",
+    "LOADING_BTN": "Đang rời đi. Vui lòng chờ"
+  },
+  "MESSAGES": {
+    "ERRORS": {
+      "DEFAULT": "Ôi không.. Có gì đó đã sai. Vui lòng thử lại",
+      "TAKEN_USERNAME": "Tên người dùng này đã được sử dụng",
+      "TAKEN_EMAIL": "Email này đã được sử dụng...",
+      "DB_ERROR": "Hiện tại chúng tôi đang gặp vấn đề. Vui lòng thử lại sau",
+      "WRONG_DATA": "Dữ liệu bạn cung cấp không đúng. Vui lòng cung cấp thông tin chính xác.",
+      "INVALID_CREDIDENTIALS": "Vui lòng nhập email và mật khẩu",
+      "NO_USER": "Không tìm thấy người dùng. Vui lòng nhập email hợp lệ",
+      "WRONG_PASSWORD": "Mật khẩu nhập vào không chính xác. Vui lòng nhập mật khẩu đúng.",
+      "IMAGE_PROFILE_UPDATE": "Cập nhật ảnh đại diện không thành công. Vui lòng thử lại",
+      "IMAGE_PROFILE_DELETE": "Xóa ảnh đại diện không thành công. Vui lòng thử lại.",
+      "UPLOAD_FAILED": "Tải lên tệp của bạn không thành công. Vui lòng thử lại.",
+      "WORKSPACE_ICON_ADDED": "Thêm biểu tượng không gian làm việc không thành công. Vui lòng thử lại",
+      "WORKSPACE_ICON_DELETE": "Xóa biểu tượng không gian làm việc không thành công. Vui lòng thử lại",
+      "NO_USER_API": "Không tìm thấy người dùng",
+      "UNAUTHORIZED": "Không được phép. Vui lòng đăng nhập!",
+      "TOO_MANY_WORKSPACES": "Đã đạt giới hạn số lượng không gian làm việc có thể tạo",
+      "NO_PERMISSION": "Bạn không có quyền sử dụng chức năng này",
+      "SAVING_MINDMAP": "Lỗi khi lưu sơ đồ tư duy",
+      "USER_NO_EXIST": "Người dùng không tồn tại",
+      "CANT_UPDATE_SEEN_NOTIFY": "Lỗi khi cập nhật thông báo",
+      "NO_MIND_MAP_FOUND": "Không tìm thấy sơ đồ tư duy",
+      "NO_POMODORO_FOUND": "Ôi không.. Có gì đó đã sai. Vui lòng thử lại",
+      "NO_CHAT": "Ôi không.. Có gì đó đã sai. Vui lòng thử lại",
+      "NO_MESSAGE": "Ôi không.. Có gì đó đã sai. Vui lòng thử lại"
+    },
+    "SUCCESS": {
+      "SIGN_UP": "Tài khoản đã được tạo!",
+      "SIGN_IN": "Bạn đã đăng nhập!",
+      "IMAGE_PROFILE_UPDATE": "Ảnh đại diện của bạn đã được cập nhật!",
+      "IMAGE_PROFILE_DELETE": "Ảnh đại diện của bạn đã bị xóa!",
+      "ONBOARDING_COMPLETE": "Chào mừng đến với Super Productive!",
+      "PASSWORD_CHANGED": "Mật khẩu đã được thay đổi!",
+      "NEW_WORKSPACE": "Không gian làm việc mới đã được tạo!",
+      "UPDATED_WORKSPACE": "Không gian làm việc đã được cập nhật!",
+      "DELETED_WORKSPACE_INFO": "Không gian làm việc đã bị xóa!",
+      "WORKSPACE_PICTURE_UPDATED": "Ảnh không gian làm việc đã được cập nhật!",
+      "TASK_ADDED": "Nhiệm vụ mới đã được tạo",
+      "TASK_DELETED": "Nhiệm vụ đã bị xóa",
+      "MIND_MAP_ADDED": "Sơ đồ tư duy mới đã được tạo",
+      "MIND_MAP_DELETED": "Sơ đồ tư duy đã bị xóa",
+      "UPDATE_POMODORO_SETTINGS": "Cài đặt Pomodoro đã được cập nhật",
+      "RESET_POMODORO_SETTINGS": "Cài đặt Pomodoro đã được đặt lại",
+      "LEAVE_FROM_WORKSPACE": "Bạn đã rời khỏi không gian làm việc"
+    },
+    "PENDING": {
+      "LOADING": "Vui lòng chờ"
+    },
+    "SCHEMA": {
+      "PASSWORD": {
+        "MIN": "Mật khẩu phải có ít nhất 6 ký tự",
+        "UPPERCASE": "Mật khẩu phải chứa ít nhất một chữ cái in hoa",
+        "LOWERCASE": "Mật khẩu phải chứa ít nhất một chữ cái thường",
+        "DIGIT": "Mật khẩu phải chứa ít nhất một chữ số"
+      },
+      "EMAIL": "Vui lòng nhập email hợp lệ",
+      "USERNAME": {
+        "SHORT": "Tên đăng nhập quá ngắn",
+        "SPECIAL_CHARS": "Tên đăng nhập chỉ được chứa chữ cái và chữ số"
+      },
+      "IMAGE": {
+        "MAX": "Kích thước ảnh tối đa là 5MB",
+        "SUPPORTED": "Chỉ hỗ trợ các loại tệp .jpeg, .jpg, .png, .webp, .gif"
+      },
+      "WORKSPACE": {
+        "SHORT": "Tên không gian làm việc quá ngắn",
+        "SPECIAL_CHARS": "Tên không gian làm việc chỉ được chứa chữ cái và chữ số"
+      },
+      "LANGUAGE": "Vui lòng chọn ngôn ngữ",
+      "CHOOSE_ONE": "Vui lòng chọn một trong các tùy chọn"
+    }
+  },
+  "SIDEBAR": {
+    "MAIN": {
+      "HOME_HOVER": "Trang chủ",
+      "LOG_OUT_HOVER": "Đăng xuất",
+      "SETTINGS_HOVER": "Cài đặt",
+      "POMODORO_HOVER": "Pomodoro",
+      "STARRED_HOVER": "Đã đánh dấu sao",
+      "ASSIGNED_TO_ME_HOVER": "Được giao cho tôi",
+      "CALENDAR_HOVER": "Lịch",
+      "NEW_WORKSPACE_HOVER": "Không gian làm việc mới",
+      "NEW_WORKSPACE_DIALOG_TITLE": "Tạo không gian làm việc mới",
+      "NEW_WORKSPACE_DIALOG_DESC": "mô tả nào đó"
+    },
+    "SETTINGS": {
+      "GENERAL": "Tổng quan",
+      "ACCOUNT": "Tài khoản",
+      "SECURITY": "Bảo mật",
+      "THEME": "Giao diện",
+      "WORKSPACE": "Không gian làm việc"
+    },
+    "POMODORO": {
+      "TIMER": "Hẹn giờ",
+      "SETTINGS": "Cài đặt"
+    },
+    "WORKSPACE_OPTIONS": {
+      "SHORTCUTS": "Phím tắt",
+      "TASKS": "Nhiệm vụ",
+      "MIND_MAPS": "Sơ đồ tư duy",
+      "SCHEDULES": "Lịch trình",
+      "STUDY": "Học tập",
+      "FILES": "Tệp tin",
+      "DEFAULT_NAME": {
+        "MIND_MAP": "Sơ đồ tư duy chưa đặt tên",
+        "TASK": "Nhiệm vụ chưa đặt tên"
+      },
+      "ACTIONS": "Hành động",
+      "ADD_TASK": "Thêm nhiệm vụ",
+      "ADD_MIND_MAP": "Thêm sơ đồ tư duy",
+      "ADD_TASK_PENDING": "Đang tạo nhiệm vụ",
+      "ADD_MIND_MAP_PENDING": "Đang tạo sơ đồ tư duy"
+    }
+  },
+  "COMMON": {
+    "WELCOMEBACK": "Chào mừng bạn trở lại",
+    "LANG_HOVER": "Thay đổi ngôn ngữ",
+    "THEME_HOVER": "Thay đổi giao diện",
+    "DARK": "Tối",
+    "LIGHT": "Sáng",
+    "SYSTEM": "Hệ thống",
+    "LOG_OUT": "Đăng xuất",
+    "SETTINGS": "Cài đặt",
+    "WARNING": "CẢNH BÁO",
+    "NOTICE": "THÔNG BÁO",
+    "DEFAULT_NAME": {
+      "MIND_MAP": "Sơ đồ tư duy chưa có tên",
+      "TASK": "Nhiệm vụ chưa có tên"
+    },
+    "ACTIVE_WORKSPACES": {
+      "FIRST": "Bạn có",
+      "SECOND": "trong số",
+      "THIRD": "không gian làm việc đang hoạt động"
+    },
+    "BACK_BTN": "Quay lại",
+    "SAVING_STATUS": {
+      "SAVED": "Đã lưu",
+      "SAVING": "Đang lưu",
+      "UNSAVED": "Chưa lưu"
+    },
+    "TAG": {
+      "FILTER": "Lọc",
+      "NEW_TAG": "Thẻ mới",
+      "TAG": "Thẻ",
+      "ERROR": "Rất tiếc... Có gì đó đã sai",
+      "ERROR_BTN": "Thử lại",
+      "NOT_FOUND": "Không tìm thấy",
+      "TAGS_HEADING": "CÁC THẺ",
+      "NEW_HEADING": "MỚI",
+      "ADD_TAG": "Thêm thẻ",
+      "COLORS": "Màu sắc",
+      "TAG_NAME": "Tên thẻ",
+      "BTNS": {
+        "CREATE": "Tạo",
+        "CANCEL": "Hủy",
+        "DELETE": "Xóa",
+        "UPDATE": "Cập nhật"
+      }
+    },
+    "EDITED_ITEM_SENTENCE": {
+      "MIND_MAP": "Sơ đồ tư duy đã được chỉnh sửa",
+      "TASK": "Nhiệm vụ đã được chỉnh sửa",
+      "BY": "bởi",
+      "IN": " - trong"
+    }
+  },
+  "PERMISSIONS": {
+    "WAIT": "Vui lòng đợi",
+    "PERMISSIONS": "QUYỀN HẠN",
+    "COPY": "Sao chép liên kết",
+    "OWNER": {
+      "TITLE": "Chủ sở hữu"
+    },
+    "ADMIN": {
+      "TITLE": "Quản trị viên",
+      "DESC": "Quản trị viên có tất cả các quyền có thể, bao gồm thay đổi cài đặt của không gian làm việc và quản lý người dùng khác."
+    },
+    "EDITOR": {
+      "TITLE": "Biên tập viên",
+      "DESC": "Biên tập viên có quyền truy cập đầy đủ vào không gian làm việc và quyền chỉnh sửa, xóa nội dung trong không gian làm việc. Tuy nhiên, biên tập viên không có quyền truy cập vào cài đặt của khu vực."
+    },
+    "VIEWER": {
+      "TITLE": "Người xem",
+      "DESC": "Người xem có quyền truy cập đầy đủ vào không gian làm việc, nhưng không thể chỉnh sửa hoặc xóa bất kỳ nội dung nào. Họ cũng không có quyền truy cập vào cài đặt khu vực."
+    }
+  },
+  "WORKSPACE": {
+    "GROUP_CHAT": "Nhóm trò chuyện",
+    "NEW_TASK": "Nhiệm vụ mới",
+    "NEW_MIND_MAP": "Sơ đồ tư duy mới",
+    "SETTINGS": "Cài đặt",
+    "LEAVE": "Rời khỏi không gian làm việc"
+  },
+  "TASK": {
+    "HEADER": {
+      "PLACEHOLDER": "Nhiệm vụ chưa có tên",
+      "DATE": {
+        "PICK": "Chọn ngày",
+        "INFO": "Nếu bạn chọn một ngày, nhiệm vụ sẽ được thêm vào lịch của bạn"
+      },
+      "TAG": {
+        "FILTER": "Lọc",
+        "NEW_TAG": "Thẻ mới",
+        "TAG": "Thẻ",
+        "ERROR": "Rất tiếc... Có gì đó đã sai",
+        "ERROR_BTN": "Thử lại",
+        "NOT_FOUND": "Không tìm thấy",
+        "TAGS_HEADING": "CÁC THẺ",
+        "NEW_HEADING": "MỚI",
+        "ADD_TAG": "Thêm thẻ",
+        "COLORS": "Màu sắc",
+        "TAG_NAME": "Tên thẻ",
+        "BTNS": {
+          "CREATE": "Tạo",
+          "CANCEL": "Hủy",
+          "DELETE": "Xóa",
+          "UPDATE": "Cập nhật"
+        }
+      }
+    },
+    "EDITOR": {
+      "PLACEHOLDER": "Viết một điều gì đó thú vị 📝",
+      "WORDS": "số từ:",
+      "CHARS": "ký tự",
+      "IMAGE": {
+        "TITLE": "Thêm hình ảnh",
+        "DESC": "Bạn có thể thêm ảnh bằng cách cung cấp liên kết đến ảnh hoặc tải lên từ thiết bị của bạn.",
+        "LINK": "Thêm qua liên kết",
+        "UPLOAD": "Tải lên từ thiết bị",
+        "LINK_TAB": {
+          "PLACEHOLDER": "Liên kết ảnh",
+          "BTN_ADD": "Thêm ảnh",
+          "BTN_PENDING": "Đang kiểm tra liên kết"
+        },
+        "UPLOAD_TAB": {
+          "TYPES": "Chỉ cho phép các loại .jpeg, .jpg, .png, .webp, .gif",
+          "BTN_ADD": "Thêm ảnh",
+          "BTN_PENDING": "Đang thêm"
+        }
+      },
+      "HOVER": {
+        "H1": "Tiêu đề 1",
+        "H2": "Tiêu đề 2",
+        "H3": "Tiêu đề 3",
+        "H4": "Tiêu đề 4",
+        "H5": "Tiêu đề 5",
+        "H6": "Tiêu đề 6",
+        "BOLD": "Đậm",
+        "ITALIC": "Nghiêng",
+        "STRIKETHROUGH": "Gạch chéo",
+        "UNDERLINE": "Gạch dưới",
+        "CODE": "Mã nguồn",
+        "UL": "Danh sách không thứ tự",
+        "OL": "Danh sách có thứ tự",
+        "LINK": "Thêm liên kết",
+        "IMAGE": "Thêm hình ảnh",
+        "COLOR": "Tô màu",
+        "COLOR_DEFAULT": "Màu mặc định",
+        "UNDO": "Hoàn tác",
+        "REDO": "Làm lại",
+        "DELETE": "Xóa"
+      },
+      "READ_ONLY": {
+        "NO_DATE": "không được ghi lại trong lịch",
+        "NO_TITLE": "Nhiệm vụ chưa có tên",
+        "NO_CONTENT": "Nhiệm vụ không có nội dung",
+        "DELETE": "Xóa",
+        "EDIT": "Chỉnh sửa",
+        "ADD_TO_FAV": "Thêm vào yêu thích",
+        "REMOVE_FROM_FAV": "Xóa khỏi yêu thích",
+        "CREATOR_INFO": "Được tạo bởi",
+        "EDITOR_INFO": "Được chỉnh sửa bởi",
+        "DIALOG": {
+          "TITLE": "Xóa nhiệm vụ",
+          "DESC": "Bạn có chắc chắn muốn xóa ghi chú này không? Bạn sẽ mất tất cả dữ liệu mà nó chứa và các hoạt động liên quan đến nó. Việc xóa không thể hoàn tác.",
+          "BTN_DELETE": "Xóa nhiệm vụ",
+          "BTN_PENDING": "Đang xóa"
+        }
+      }
+    },
+    "BTN": {
+      "SAVE_TASK": "Thêm nhiệm vụ"
+    },
+    "ASSIGNMENT": {
+      "TRIGGER": "Bàn giao",
+      "ERROR_MSG": "Có gì đó sai, vui lòng thử lại",
+      "ERROR_BTN": "Thử lại",
+      "PLACEHOLDER": "Lọc",
+      "NOT_FOUND": "Không tìm thấy người dùng",
+      "HEADING": "Bàn giao cho"
+    },
+    "CREATOR_INFO": "Được tạo bởi",
+    "EDITOR_INFO": "Được chỉnh sửa bởi"
+  },
+  "MIND_MAP": {
+    "HOVER_TIP": {
+      "ADD_TITLE": "Thêm tiêu đề mới",
+      "SAVE": "Lưu sơ đồ tư duy"
+    },
+    "TAG": "Thêm thẻ vào sơ đồ tư duy",
+    "DELETE": {
+      "MESSAGE": {
+        "SUCCES": "Đặt lại thành công",
+        "ERROR": "Lưu thay đổi thất bại."
+      },
+      "HOVER": "Xóa tất cả các thẻ",
+      "DIALOG": {
+        "TITLE": "Xóa tất cả các thẻ",
+        "DESC": "Đặt lại bố cục sơ đồ tư duy về trạng thái ban đầu",
+        "WARNING": "Khôi phục trạng thái ban đầu sẽ xóa tất cả các thẻ và kết nối hiện tại. Nhấn 'Đặt lại trạng thái' để xóa tất cả các thẻ và kết nối.",
+        "BTN_RESET": "Đặt lại trạng thái",
+        "BTN_PENDING": "Đang đặt lại"
+      }
+    },
+    "EDGE_OPTIONS": {
+      "TITLE": "Cài đặt kết nối",
+      "DESC": "Tùy chỉnh cách kết nối của bạn trông như thế nào. Thêm văn bản, chọn loại kết nối, thay đổi màu sắc và chọn có muốn hoạt ảnh cho chúng không!",
+      "FORM": {
+        "LABEL": {
+          "LABEL": "Nhãn",
+          "DESC": "Thêm tên để hiển thị nhãn. Để trống trường này và lưu thay đổi để xóa nhãn.",
+          "PLACEHOLDER": "Thêm nhãn"
+        },
+        "TYPE": {
+          "LABEL": "Loại kết nối",
+          "DEFAULT": "Mặc định",
+          "STRAIGHT": "Thẳng",
+          "STEP_SHARP": "Bậc thang",
+          "DESC": "Chọn loại kết nối"
+        },
+        "COLOR": {
+          "LABEL": "Màu",
+          "DESC": "Lựa chọn màu chỉ ảnh hưởng đến nhãn"
+        },
+        "ANIMATED": {
+          "LABEL": "Hoạt ảnh kết nối"
+        },
+        "REVERVE": {
+          "LABEL": "Đảo ngược"
+        },
+        "BTN_SAVE": "Lưu",
+        "BTN_DELETE_EDGE": "Xóa kết nối"
+      }
+    },
+    "NODE": {
+      "EDIT": "Chỉnh sửa",
+      "COLOR": "Màu sắc",
+      "DELETE": "Xóa",
+      "SAVE": "Lưu thay đổi",
+      "CANCEL": "Hủy",
+      "PLACEHOLDER": "Thêm mô tả mới"
+    },
+    "EDIT_TITLE_AND_EMOJI": {
+      "ERROR": "Lưu thay đổi thất bại.",
+      "HOVER": "Chỉnh sửa thông tin",
+      "TITLE": "Chỉnh sửa thông tin",
+      "DESC": "Thay đổi tên sơ đồ tư duy của bạn và đặt biểu tượng cho nó",
+      "PLACEHOLDER": "Sơ đồ tư duy chưa có tên",
+      "SAVE": "Lưu",
+      "CANCEL": "Hủy"
+    },
+    "PREVIEW": {
+      "INFO": "Đây là trang xem trước. Bạn có thể di chuyển trong không gian sơ đồ, nhưng để chỉnh sửa nó, hãy vào trang chỉnh sửa (nếu bạn có quyền truy cập cần thiết).",
+      "NO_TITLE": "Sơ đồ tư duy chưa có tên",
+      "DELETE": "Xóa",
+      "EDIT": "Chỉnh sửa",
+      "ADD_TO_FAV": "Thêm vào yêu thích",
+      "REMOVE_FROM_FAV": "Xóa khỏi yêu thích",
+      "DIALOG": {
+        "TITLE": "Xóa sơ đồ tư duy",
+        "DESC": "Bạn có chắc chắn muốn xóa sơ đồ tư duy không? Bạn sẽ mất tất cả dữ liệu và các hành động liên quan. Việc xóa là không thể phục hồi.",
+        "BTN_DELETE": "Xóa",
+        "BTN_PENDING": "Đang xóa"
+      },
+      "CREATOR_INFO": "Được tạo bởi",
+      "EDITOR_INFO": "Được chỉnh sửa bởi"
+    },
+    "ASSIGNMENT": {
+      "TRIGGER": "Giao cho",
+      "ERROR_MSG": "Có gì đó sai, vui lòng thử lại",
+      "ERROR_BTN": "Thử lại",
+      "PLACEHOLDER": "Lọc",
+      "NOT_FOUND": "Không tìm thấy người dùng",
+      "HEADING": "GIAO CHO"
+    },
+    "SETTINGS": {
+      "ACCOUNT": {
+        "TITLE": "Tài khoản",
+        "DESC": "Quản lý tài khoản Super Productive của bạn. Mọi thay đổi đối với tài khoản của bạn sẽ được áp dụng cho tất cả không gian làm việc.",
+        "IMAGE": "HÌNH ẢNH HỒ SƠ",
+        "USERNAME": "TÊN ĐĂNG NHẬP",
+        "FIRST_NAME": "HỌ TÊN (TÙY CHỌN)",
+        "SURNAME": "HỌ (TÙY CHỌN)",
+        "USERNAME_PLACEHOLDER": "Tên đăng nhập",
+        "FIRST_NAME_PLACEHOLDER": "Tên",
+        "SURNAME_PLACEHOLDER": "Họ",
+        "LANG": "NGÔN NGỮ",
+        "SEARCH_LANGUAGE": "Tìm kiếm ngôn ngữ...",
+        "SELECT_LANGUAGE": "Chọn ngôn ngữ",
+        "NO_LANGUAGE": "Không có ngôn ngữ",
+        "UPDATE_BTN": "Cập nhật",
+        "DELETE_TITLE": "Xóa tài khoản",
+        "DELETE_DESC": "Một khi tài khoản và dữ liệu bị xóa, sẽ không thể phục hồi chúng.",
+        "DELETE_LABEL": "XÓA TÀI KHOẢN VÀ DỮ LIỆU CỦA TÔI",
+        "DELETE_PLACEHOLDER": "Xác nhận email của bạn",
+        "DELETE_BTN": "Xóa",
+        "WRONG_CONFIRM_EMAIL": "Email xác nhận sai",
+        "DIALOG": {
+          "TITLE": "Xóa tài khoản",
+          "DESC": "Bạn sẽ mất quyền truy cập vào tất cả không gian làm việc và dự án của mình",
+          "WARNING": "Việc xóa tài khoản là vĩnh viễn và không thể hoàn tác, nhấn 'Xóa tài khoản của tôi' để xóa tài khoản.",
+          "BUTTON": "XÓA TÀI KHOẢN CỦA TÔI"
+        }
+      }
+    },
+    "THEME": {
+      "ADD_TASK": "Thêm nhiệm vụ",
+      "ADD_TASK_PENDING": "Đang tạo nhiệm vụ"
+    },
+    "SECURITY": {
+      "TITLE": "Bảo mật",
+      "DESC": "Bạn có thể thay đổi mật khẩu tại đây. Hãy nhớ rằng mật khẩu phải chứa ít nhất 6 ký tự, có ít nhất một chữ cái viết hoa và một chữ cái viết thường, và ít nhất một số.",
+      "WARNING": {
+        "FIRST": "Mật khẩu có thể được thay đổi",
+        "SECOND": "chỉ đối với các tài khoản được tạo qua mẫu trên trang web",
+        "THIRD": "Nếu bạn đã tạo tài khoản qua nút Google hoặc Github, ",
+        "FOURTH": "không thể thay đổi mật khẩu",
+        "FIFTH": "do phương pháp xác thực tài khoản khác."
+      },
+      "FORM": {
+        "CURRENT": {
+          "LABEL": "MẬT KHẨU HIỆN TẠI",
+          "PLACEHOLDER": "Mật khẩu hiện tại"
+        },
+        "NEW": {
+          "LABEL": "MẬT KHẨU MỚI",
+          "PLACEHOLDER": "Mật khẩu mới"
+        },
+        "REPEAT": {
+          "LABEL": "XÁC NHẬN MẬT KHẨU",
+          "PLACEHOLDER": "Xác nhận mật khẩu"
+        },
+        "BTN": "Thay đổi mật khẩu",
+        "BTN_PENDING": "Đang thay đổi mật khẩu"
+      }
+    }
+  },
+  "POMODORO": {
+    "SETTINGS": {
+      "CARD": {
+        "TITLE": "Cài đặt Pomodoro",
+        "DESC": "Quản lý cài đặt của bạn. Cá nhân hóa Pomodoro theo ý muốn. Bạn có thể thay đổi số vòng, thời gian làm việc và nghỉ, cũng như tùy chỉnh âm thanh thông báo."
+      },
+      "FORM": {
+        "TIMER": "Hẹn giờ",
+        "SOUND": "Âm thanh",
+        "WORK": {
+          "LABEL": "Thời gian làm việc: {value} phút",
+          "DESC": "Đặt thời gian làm việc của bạn"
+        },
+        "SHORT_BREAK": {
+          "LABEL": "Thời gian nghỉ ngắn: {value} phút",
+          "DESC": "Đặt thời gian nghỉ ngắn"
+        },
+        "LONG_BREAK": {
+          "LABEL": "Thời gian nghỉ dài: {value} phút",
+          "DESC": "Đặt thời gian nghỉ dài"
+        },
+        "ROUNDS": {
+          "LABEL": "Số vòng: {value}",
+          "DESC": "Đặt số vòng hoàn thành một phiên làm việc đầy đủ (một vòng kết thúc sau khi hết thời gian nghỉ dài)"
+        },
+        "LONG_BREAKS_INTERVAL": {
+          "LABEL": "Khoảng cách giữa các lần nghỉ dài: {value}",
+          "DESC": "Giá trị càng lớn, một vòng sẽ kéo dài lâu hơn (khoảng cách dài hơn giữa các lần nghỉ dài)"
+        },
+        "ALARM": {
+          "LABEL": "Âm thanh thông báo",
+          "DESC": "Chọn âm thanh để phát khi hết thời gian",
+          "ANALOG": "Analog",
+          "BELL": "Chuông",
+          "BIRD": "Chim",
+          "CHURCH_BELL": "Chuông nhà thờ",
+          "DIGITAL": "Kỹ thuật số",
+          "FANCY": "Cầu kỳ"
+        },
+        "VOLUME": {
+          "LABEL": "Âm lượng âm thanh thông báo: {value}%",
+          "DESC": "Để tắt âm thanh thông báo, đặt âm lượng thành 0%"
+        },
+        "RESET": {
+          "BTN": "Đặt lại cài đặt",
+          "BTN_PENDING": "Đang đặt lại"
+        },
+        "SAVE": {
+          "BTN": "Lưu thay đổi",
+          "BTN_PENDING": "Đang lưu"
+        }
+      }
+    },
+    "TIMER": {
+      "END_TEXT": "Làm tốt lắm!",
+      "FOCUS": "Tập trung",
+      "BREAK": "Thời gian nghỉ!",
+      "ROUNDS": "Vòng",
+      "INTERVAL": "Đợt",
+      "NEW": "Bắt đầu phiên mới",
+      "START": "Bắt đầu",
+      "STOP": "Dừng"
+    }
+  },
+  "STARRED": {
+    "TITLE": "Các mục đã đánh dấu sao của bạn",
+    "DESC": "Tại đây bạn sẽ tìm thấy tất cả các sơ đồ tư duy và nhiệm vụ đã lưu của bạn.",
+    "ERROR": "Đã xảy ra lỗi khi truy xuất dữ liệu của bạn. Vui lòng thử lại.",
+    "ITEM_SENTENCE": {
+      "MIND_MAP": "Sơ đồ tư duy đã được chỉnh sửa",
+      "TASK": "Nhiệm vụ đã được chỉnh sửa",
+      "BY": "bởi",
+      "IN": " - trong"
+    },
+    "DEFAULT_NAME": {
+      "MIND_MAP": "Sơ đồ tư duy không tiêu đề",
+      "TASK": "Nhiệm vụ không tiêu đề"
+    },
+    "UNSTAR": "Gỡ sao",
+    "SORT": {
+      "ASC": "Mới nhất",
+      "DESC": "Cũ nhất",
+      "INFO": "Sắp xếp theo ngày chỉnh sửa"
+    },
+    "NO_ITEMS": {
+      "TITLE": "Bạn không có dự án nào được đánh dấu sao",
+      "DESC": "Bất kỳ nhiệm vụ hoặc sơ đồ tư duy nào bạn đánh dấu sao sẽ xuất hiện ở đây."
+    }
+  },
+  "ASSIGNED_TO_ME": {
+    "TITLE": "Giao cho tôi",
+    "DESC": "Tại đây bạn sẽ tìm thấy tất cả các sơ đồ tư duy và nhiệm vụ đã lưu của bạn",
+    "NO_ASSIGNMENT": "Bạn chưa được giao nhiệm vụ nào",
+    "NOT_FOUND": "Chúng tôi không thể tìm thấy bất kỳ nhiệm vụ hoặc sơ đồ tư duy nào phù hợp với tiêu chí",
+    "DEFAULT_NAME": {
+      "MIND_MAP": "Sơ đồ tư duy không tiêu đề",
+      "TASK": "Nhiệm vụ không tiêu đề"
+    }
+  },
+  "CALENDAR": {
+    "DAYS_OF_WEEK": {
+      "MON": "T2",
+      "TUE": "T3",
+      "WED": "T4",
+      "THU": "T5",
+      "FRI": "T6",
+      "SAT": "T7",
+      "SUN": "CN"
+    },
+    "HEADER": {
+      "PREV": "Trước",
+      "TODAY": "Hôm nay",
+      "NEXT": "Tiếp theo"
+    },
+    "TASK": "Nhiệm vụ không tiêu đề",
+    "SHOW_MORE": {
+      "MORE": "Thêm",
+      "TITLE": "Tất cả nhiệm vụ",
+      "DESC": "Tất cả nhiệm vụ từ các không gian làm việc mà bạn tham gia"
+    }
+  },
+  "TASK_SHORTCUT": {
+    "TITLE": "Tạo Nhiệm Vụ",
+    "HINT": "Thêm nhanh",
+    "ADDED_TASK": "Nhiệm vụ đã được thêm vào dự án! Xem Nhiệm Vụ",
+    "CHOOSE_WORKSPACE": "Chọn không gian làm việc",
+    "DESC": "Thêm một nhiệm vụ vào không gian làm việc đã chọn mà bạn tham gia và có quyền truy cập yêu cầu",
+    "BTN_ADD": "Thêm vào Không gian làm việc",
+    "BTN_NO_WORKSPACES": "Tôi hiểu",
+    "BTN_PENDING": "Đang thêm. Vui lòng chờ",
+    "DUE_DATE": "Ngày hết hạn",
+    "MAIN_TAB": {
+      "PLACEHOLDER": "Thêm tiêu đề",
+      "WORKSPACE": "Không gian làm việc",
+      "WARNING": "Bạn chưa có không gian làm việc nào để thêm nhiệm vụ. Tạo không gian làm việc mới hoặc tham gia một không gian làm việc hiện có với ít nhất quyền 'Biên tập viên'."
+    }
+  },
+  "PERMISSION_INDICATOR": {
+    "TITLE": "Vai trò hiện tại của bạn là",
+    "DESC": "Quyền của bạn trong không gian làm việc {workspace} hiện tại là",
+    "ROLES": {
+      "OWNER": "Chủ sở hữu",
+      "ADMIN": "Quản trị viên",
+      "EDITOR": "Biên tập viên",
+      "READ_ONLY": "Người xem"
+    },
+    "HINT": "Quyền trong {workspace} là",
+    "ROLES_DESC": {
+      "OWNER": "Là Chủ sở hữu, bạn có tất cả các quyền có thể. Bạn có thể quản lý nội dung, người dùng khác và tùy chỉnh cài đặt không gian làm việc. Tuy nhiên, là Chủ sở hữu, bạn không thể rời khỏi không gian làm việc này; tùy chọn duy nhất là xóa hoàn toàn nó trong cài đặt.",
+      "ADMIN": "Là Quản trị viên, bạn có tất cả quyền có thể, bao gồm thay đổi cài đặt không gian làm việc và quản lý người dùng khác.",
+      "EDITOR": "Là Biên tập viên, bạn có quyền truy cập đầy đủ vào không gian làm việc, với quyền chỉnh sửa và xóa nội dung trong không gian làm việc. Tuy nhiên, bạn không có quyền truy cập vào cài đặt không gian làm việc.",
+      "READ_ONLY": "Là Người xem, bạn có quyền truy cập đầy đủ vào không gian làm việc nhưng không có quyền chỉnh sửa nội dung trong đó. Bạn cũng không có quyền truy cập vào cài đặt không gian làm việc."
+    },
+    "BTN": "Đã hiểu"
+  },
+  "USERS_STATUS_LIST": {
+    "ROLES": {
+      "OWNER": "Chủ sở hữu",
+      "ADMIN": "Quản trị viên",
+      "CAN_EDIT": "Biên tập viên",
+      "READ_ONLY": "Người xem",
+      "UNAVAILABLE": "KHÔNG CÓ SẴN"
+    },
+    "ERROR": {
+      "MG": "Không thể truy xuất thông tin thành viên không gian làm việc",
+      "BTN": "Thử lại"
+    }
+  },
+  "NOTIFICATIONS": {
+    "TITLE": "Thông báo",
+    "MARK_AS_READ": "Đánh dấu tất cả là đã đọc",
+    "MARK": "Đánh dấu là đã đọc",
+    "CLEAR_ALL": "Xóa tất cả thông báo",
+    "CLEAR": "Xóa thông báo",
+    "NO_NOTIFICATIONS": "Bạn chưa có thông báo nào",
+    "ERROR": "Đã xảy ra lỗi khi lấy thông báo",
+    "NOTIFY_ITEM": {
+      "ROLES": {
+        "ADMIN": "Quản trị viên",
+        "CAN_EDIT": "Biên tập viên",
+        "READ_ONLY": "Người xem"
+      },
+      "NEW_USER_IN_WORKSPACE_TEXT": "đã tham gia không gian làm việc {name}",
+      "USER_LEFT_WORKSPACE_TEXT": "đã rời khỏi không gian làm việc {name}",
+      "NEW_TASK_TEXT": "đã thêm một nhiệm vụ mới vào không gian làm việc {name}",
+      "NEW_MIND_MAP_TEXT": "đã thêm một sơ đồ tư duy mới vào không gian làm việc {name}",
+      "NEW_ROLE_TEXT": "Bạn đã được cấp quyền {role} trong không gian làm việc {name}",
+      "NEW_ASSIGMENT_TASK_TEXT": "Bạn đã được giao một nhiệm vụ trong không gian làm việc {name}",
+      "NEW_ASSIGMENT_MIND_MAP_TEXT": "Bạn đã được giao một sơ đồ tư duy trong không gian làm việc {name}"
+    }
+  },
+  "HOME_PAGE": {
+    "NO_DATA": "Không tìm thấy hoạt động. Tham gia một không gian làm việc hoặc tạo không gian của riêng bạn. Sau đó, tất cả các nhiệm vụ và sơ đồ tư duy được chỉnh sửa sẽ xuất hiện ở đây theo thứ tự mới nhất.",
+    "ERROR": "Đã xảy ra lỗi khi truy xuất hoạt động mới nhất."
+  },
+  "WORKSPACE_MAIN_PAGE": {
+    "FILTER": {
+      "FILTER_BTN": "Lọc",
+      "CLEAR_BTN": "Xóa"
+    },
+    "COMMAND": {
+      "SEARCH": "Tìm kiếm",
+      "NO_RESULTS_FOUND": "Không tìm thấy kết quả",
+      "ASSIGNED_TO": "GIAO CHO",
+      "TAG": "THẺ",
+      "ASSIGNED_TO_ME": "Giao cho tôi"
+    },
+    "RECENT_ACTIVITY": {
+      "NO_FILTERED_DATA": "Không có nhiệm vụ và sơ đồ tư duy để hiển thị cho tiêu chí đã cho",
+      "ERROR": "Không thể lấy dữ liệu hoạt động gần đây trong không gian làm việc",
+      "NO_DATA": "Không có hoạt động. Hãy tạo nhiệm vụ và sơ đồ tư duy đầu tiên của bạn ngay!"
+    },
+    "SHORTCUT_CONTAINER": {
+      "GROUP_CHAT": "Nhóm trò chuyện",
+      "PRIVATE_CHAT": "Trò chuyện riêng",
+      "NEW_TASK": "Nhiệm vụ mới",
+      "NEW_MIND_MAP": "Sơ đồ tư duy mới"
+    }
+  },
+  "CHAT": {
+    "NO_MESSAGES": {
+      "FIRST": "Chúng tôi không tìm thấy tin nhắn nào trong trò chuyện này.",
+      "SECOND": "Gửi tin nhắn đầu tiên!"
+    },
+    "HEADER": { "TITLE": "Trò chuyện {workspaceName}" },
+    "DELETE_MESSAGE": {
+      "TITLE": "Xóa Tin nhắn",
+      "DESC": "Hành động này không thể hoàn tác và sẽ xóa vĩnh viễn tin nhắn.",
+      "BTN_DELETE": "Xóa",
+      "BTN_CANCEL": "Hủy"
+    },
+    "EDIT": {
+      "BADGE": "(đã chỉnh sửa)",
+      "TEXT": {
+        "FIRST": "Nhấn",
+        "SECOND": ", để hủy • Nhấn",
+        "THIRD": ", để lưu"
+      }
+    },
+    "OPTIONS": {
+      "EDIT": "Chỉnh sửa Tin nhắn",
+      "DELETE": "Xóa Tin nhắn"
+    },
+    "LOAD_MORE": "Tải thêm",
+    "NOTIFICATIONS": "{notifications} tin nhắn mới",
+    "NEW_MESSAGE": {
+      "PLACEHOLDER": "Tin nhắn mới",
+      "DELETE_ATACHMENT": "Xóa tệp đính kèm",
+      "ATACHMENT_DEAFULT_ERROR": "Không thể thêm tệp đính kèm.",
+      "ATACHMENT_TO_MANY_ERROR": "Không thể thêm tệp đính kèm. Số tệp tối đa bạn có thể gửi cùng lúc là 5 hình ảnh và 5 tệp PDF.",
+      "ATACHMENT_TO_BIG_ERROR": "Không thể thêm tệp đính kèm. Một trong các tệp quá lớn.",
+      "ATACHMENT_WRONG_FILE_ERROR": "Không thể thêm tệp đính kèm. Một trong các tệp có định dạng không được hỗ trợ."
+    }
+  },
+  "CLIENT_ERROR": {
+    "TITLE": "Ôi không... Đã có gì đó không đúng",
+    "BTN": "Thử lại"
+  },
+  "ROUTES": {
+    "DASHBOARD": "Trang chủ",
+    "SETTINGS": "Cài đặt",
+    "SECURITY": "Bảo mật",
+    "THEME": "Giao diện",
+    "TASKS": "Nhiệm vụ",
+    "UNTITLED": "Chưa đặt tiêu đề",
+    "POMODORO": "Pomodoro",
+    "STARRED": "Đã đánh dấu sao",
+    "ASSIGNED-TO-ME": "Giao cho tôi",
+    "CHAT": "Trò chuyện"
+  },
+  "EDIT_WORKSPACE": {
+    "TITLE": "Chỉnh sửa không gian làm việc",
+    "DESC": "Tại đây bạn có thể thay đổi tên không gian làm việc và biểu tượng của nó.",
+    "PICTURE": {
+      "LABEL": "BIỂU TƯỢNG KHÔNG GIAN LÀM VIỆC",
+      "TITLE": "Thay đổi biểu tượng",
+      "BTN": "Chọn hình ảnh"
+    },
+    "DATA": {
+      "INPUTS": {
+        "NAME": "TÊN KHÔNG GIAN LÀM VIỆC",
+        "COLOR": "MÀU SẮC BIỂU TƯỢNG KHÔNG GIAN LÀM VIỆC"
+      },
+      "PLACEHOLDERS": {
+        "NAME": "ví dụ: openstudio"
+      },
+      "INFO": "Thay đổi màu chỉ ảnh hưởng đến biểu tượng không gian làm việc khi chưa thêm hình ảnh",
+      "BTN": "Cập nhật",
+      "BTN_PENDING": "Đang cập nhật"
+    },
+    "DELETE": {
+      "TITLE": "Xóa không gian làm việc",
+      "DESC": "Khi xóa một không gian làm việc và dữ liệu thuộc về nó, không có cách nào để khôi phục lại.",
+      "LABEL": "XÁC NHẬN TÊN KHÔNG GIAN LÀM VIỆC",
+      "BTN": "Xóa",
+      "DIALOG": {
+        "TITLE": "Xóa không gian làm việc",
+        "DESC": "Tất cả dữ liệu sẽ bị xóa vĩnh viễn và tất cả người dùng thuộc không gian làm việc này sẽ mất quyền truy cập.",
+        "WARNING": "Việc xóa không gian làm việc là vĩnh viễn và không thể khôi phục. Nhấn 'Xóa không gian làm việc' để xóa.",
+        "BUTTON": "XÓA KHÔNG GIAN LÀM VIỆC",
+        "PENDING_BTN": "Đang xóa. Vui lòng chờ"
+      }
+    },
+    "MEMBERS": {
+      "TITLE": "Thành viên",
+      "DESC": "Tại đây bạn có thể quản lý các thành viên của không gian làm việc. Bạn có thể thay đổi vai trò của họ cũng như xóa họ khỏi không gian làm việc.",
+      "TABLE": {
+        "USERNAME": "TÊN NGƯỜI DÙNG",
+        "PERMISSION_SMALL": "QUYỀN HẠN",
+        "PERMISSION_BIG": "QUYỀN LỢI KHÔNG GIAN LÀM VIỆC"
+      },
+      "OPTIONS": {
+        "REMOVE_BTN": "Xóa",
+        "LEAVE_BTN": "Rời khỏi",
+        "REMOVE": {
+          "TITLE": "Xóa khỏi không gian làm việc",
+          "NOTE": "Bạn có thể mời người dùng này tham gia lại không gian làm việc bất cứ lúc nào. Để xác nhận, nhấn 'Xóa khỏi không gian làm việc'.",
+          "BTN": "Xóa khỏi không gian làm việc",
+          "BTN_PENDING": "Đang xóa"
+        },
+        "LEAVE": {
+          "TITLE": "Rời khỏi không gian làm việc",
+          "NOTE": "Bạn chỉ có thể quay lại khi được mời lại vào không gian làm việc này. Để xác nhận, nhấn 'Rời khỏi không gian làm việc'.",
+          "BTN": "Rời khỏi không gian làm việc",
+          "BTN_PENDING": "Đang rời"
+        }
+      }
+    },
+    "TASKS": {
+      "TITLE": "Nhiệm vụ",
+      "DESC": "Tại đây bạn có thể quản lý tất cả các nhiệm vụ của không gian làm việc."
+    }
+  }
+}
