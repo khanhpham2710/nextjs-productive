@@ -19,7 +19,8 @@ interface InviteCodeValidWhere {
   canEditCode?: string;
 }
 
-async function Workspace({ params: { invite_code }, searchParams }: Params) {
+async function Workspace({ params, searchParams }: Params) {
+  const { invite_code } = params;
   const session = await checkifUserCompletedOnboarding(
     `/dashboard/invite/${invite_code}`
   );
