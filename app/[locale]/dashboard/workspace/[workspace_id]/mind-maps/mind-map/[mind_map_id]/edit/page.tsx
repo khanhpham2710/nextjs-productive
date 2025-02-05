@@ -6,7 +6,9 @@ import { AutosaveIndicatorProvider } from "@/context/AutosaveIndicator";
 import { AutoSaveMindMapProvider } from "@/context/AutoSaveMindMap";
 import { getMindMap, getUserWorkspaceRole, getWorkspace } from "@/lib/api";
 import checkifUserCompletedOnboarding from "@/lib/checkifUserCompletedOnboarding";
+import { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
+import { cache } from "react";
 
 interface Params {
   params: Promise<{
@@ -15,16 +17,34 @@ interface Params {
   }>;
 }
 
+const getWorkspaceName = cache(getWorkspace);
+const getMindMapName = cache(getMindMap);
+const getSession = cache(checkifUserCompletedOnboarding);
+
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const { workspace_id, mind_map_id } = await params;
+
+  const session = await getSession(
+    `/dashboard/workspace/${workspace_id}/tasks/task/${mind_map_id}/edit`
+  );
+  const workspace = await getWorkspaceName(workspace_id, session.user.id);
+  const mindMap = await getMindMapName(mind_map_id, session.user.id);
+
+  return {
+    title: mindMap.title ? workspace.name + " | " + mindMap.title : workspace.name,
+  };
+}
+
 export default async function EditMindMapPage({ params }: Params) {
   const { workspace_id, mind_map_id } = await params;
-  const session = await checkifUserCompletedOnboarding(
+  const session = await getSession(
     `/dashboard/workspace/${workspace_id}/tasks/task/${mind_map_id}`
   );
 
   const [workspace, userRole, mindMap] = await Promise.all([
-    getWorkspace(workspace_id, session.user.id),
+    getWorkspaceName(workspace_id, session.user.id),
     getUserWorkspaceRole(workspace_id, session.user.id),
-    getMindMap(mind_map_id, session.user.id),
+    getMindMapName(mind_map_id, session.user.id),
   ]);
 
   if (!workspace || !userRole || !mindMap) notFound();

@@ -3,7 +3,12 @@ import DashboardHeader from '@/components/header/DashboardHeader';
 import PomodoroContainer from '@/components/pomodoro/timer/PomodoroContainer';
 import { getUserPomodoroSettings } from '@/lib/api';
 import checkifUserCompletedOnboarding from '@/lib/checkifUserCompletedOnboarding';
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+
+export const metadata: Metadata = {
+  title: 'Pomodoro',
+}
 
 export default async function page() {
     const session = await checkifUserCompletedOnboarding(`/dashboard/pomodoro`);

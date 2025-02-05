@@ -21,7 +21,7 @@ function NotFound() {
             {t("DESC")}
           </p>
           <p
-            className={`${buttonVariants()} inline-flex text-white bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4 gap-0.5`}
+            className={`${buttonVariants()} inline-flex text-white dark:text-black bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4 gap-0.5`}
           >
             {t("BACK")} <Link href={"/dashboard"}> {t("HOME_PAGE")}</Link>
           </p>

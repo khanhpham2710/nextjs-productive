@@ -5,7 +5,9 @@ import ReadOnlyContent from "@/components/tasks/readOnly/ReadOnlyContent";
 import { getTask, getUserWorkspaceRole, getWorkspace } from "@/lib/api";
 import changeCodeToEmoji from "@/lib/changeCodeToEmoji";
 import checkifUserCompletedOnboarding from "@/lib/checkifUserCompletedOnboarding";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { cache } from "react";
 
 interface Params {
   params: Promise<{
@@ -14,17 +16,35 @@ interface Params {
   }>;
 }
 
+const getWorkspaceName = cache(getWorkspace);
+const getTaskName = cache(getTask);
+const getSession = cache(checkifUserCompletedOnboarding)
+
+export async function generateMetadata({
+  params,
+}: Params): Promise<Metadata> {
+  const { workspace_id, task_id } = await params;
+  
+  const session = await getSession(`/dashboard/workspace/${workspace_id}/tasks/task/${task_id}`)
+  const workspace = await getWorkspaceName(workspace_id, session.user.id);
+  const task = await getTaskName(task_id, session.user.id)
+
+  return {
+    title: task.title ? workspace.name + " | " + task.title : workspace.name,
+  };
+}
+
 async function Task({ params }: Params) {
   const { workspace_id, task_id } = await params;
 
-  const session = await checkifUserCompletedOnboarding(
+  const session = await getSession(
     `/dashboard/workspace/${workspace_id}/tasks/task/${task_id}`
   );
 
   const [workspace, userRole, task] = await Promise.all([
-    getWorkspace(workspace_id, session.user.id),
+    getWorkspaceName(workspace_id, session.user.id),
     getUserWorkspaceRole(workspace_id, session.user.id),
-    getTask(task_id, session.user.id),
+    getTaskName(task_id, session.user.id),
   ]);
 
   if (!workspace || !userRole || !task) notFound();

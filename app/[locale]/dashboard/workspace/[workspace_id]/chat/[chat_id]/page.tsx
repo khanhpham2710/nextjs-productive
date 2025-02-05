@@ -9,6 +9,8 @@ import checkifUserCompletedOnboarding from "@/lib/checkifUserCompletedOnboarding
 import DashboardHeader from "@/components/header/DashboardHeader";
 import InviteUsers from "@/components/invite/InviteUsers";
 import AddTaskShortcut from "@/components/addTaskShortcut/AddTaskShortcut";
+import { Metadata } from "next";
+import { cache } from "react";
 
 interface Params {
   params: Promise<{
@@ -17,14 +19,28 @@ interface Params {
   }>;
 }
 
+const getWorkspace = cache(getWorkspaceWithChatId);
+const getSession = cache(checkifUserCompletedOnboarding)
+
+export async function generateMetadata({
+  params,
+}: Params): Promise<Metadata> {
+  const { workspace_id,chat_id } = await params
+  
+  const session = await getSession(`/dashboard/workspace/${workspace_id}/chat/${chat_id}`)
+  const workspace = await getWorkspace(workspace_id, session.user.id);
+
+  return {
+    title: workspace.name,
+  };
+}
+
 const Chat = async ({ params }: Params) => {
   const { workspace_id, chat_id } = await params
-  const session = await checkifUserCompletedOnboarding(
-    `/dashboard/workspace/${workspace_id}/chat/${chat_id}`
-  );
+  const session = await getSession(`/dashboard/workspace/${workspace_id}/chat/${chat_id}`)
 
   const [workspace, userRole, initialMessages] = await Promise.all([
-    getWorkspaceWithChatId(workspace_id, session.user.id),
+    getWorkspace(workspace_id, session.user.id),
     getUserWorkspaceRole(workspace_id, session.user.id),
     getInitialMessages(session.user.id, chat_id),
   ]);

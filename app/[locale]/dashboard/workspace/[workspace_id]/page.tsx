@@ -9,12 +9,30 @@ import { ShortcutContainer } from "@/components/workspaceMainPage/shortcuts/Shor
 import { FilterByUsersAndTagsInWorkspaceProvider } from "@/context/FilterByUsersAndTagsInWorkspace";
 import { getUserWorkspaceRole, getWorkspaceWithChatId, } from "@/lib/api";
 import checkifUserCompletedOnboarding from "@/lib/checkifUserCompletedOnboarding";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { cache } from "react";
 
 interface Params {
   params: Promise<{
     workspace_id: string;
   }>;
+}
+
+const getWorkspace = cache(getWorkspaceWithChatId);
+const getSession = cache(checkifUserCompletedOnboarding)
+
+export async function generateMetadata({
+  params,
+}: Params): Promise<Metadata> {
+  const { workspace_id } = await params
+  
+  const session = await getSession(`/dashboard/settings/workplace/${workspace_id}`)
+  const workspace = await getWorkspace(workspace_id, session.user.id);
+
+  return {
+    title: workspace.name,
+  };
 }
 
 async function Workspace({ params }: Params) {

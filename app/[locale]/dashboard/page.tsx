@@ -3,6 +3,17 @@ import DashboardHeader from "@/components/header/DashboardHeader";
 import HomeRecentActivityContainer from "@/components/homeRecentActivity/HomeRecentActivityContainer";
 import { getInitialHomeRecentActivity } from "@/lib/api";
 import checkifUserCompletedOnboarding from "@/lib/checkifUserCompletedOnboarding";
+import { Metadata } from "next";
+import { headers } from "next/headers";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const pathname = headersList.get('x-next-intl-locale');
+
+  return {
+    title: pathname == "vi" ? "Trang chủ" :"Home",
+  };
+}
 
 const Dashboard = async () => {
   const session = await checkifUserCompletedOnboarding("/dashboard");
