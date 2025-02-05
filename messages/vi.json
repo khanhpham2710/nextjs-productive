@@ -508,67 +508,67 @@
       "PLACEHOLDER": "Lọc",
       "NOT_FOUND": "Không tìm thấy người dùng",
       "HEADING": "GIAO CHO"
-    },
-    "SETTINGS": {
-      "ACCOUNT": {
-        "TITLE": "Tài khoản",
-        "DESC": "Quản lý tài khoản Super Productive của bạn. Mọi thay đổi đối với tài khoản của bạn sẽ được áp dụng cho tất cả không gian làm việc.",
-        "IMAGE": "HÌNH ẢNH HỒ SƠ",
-        "USERNAME": "TÊN ĐĂNG NHẬP",
-        "FIRST_NAME": "HỌ TÊN (TÙY CHỌN)",
-        "SURNAME": "HỌ (TÙY CHỌN)",
-        "USERNAME_PLACEHOLDER": "Tên đăng nhập",
-        "FIRST_NAME_PLACEHOLDER": "Tên",
-        "SURNAME_PLACEHOLDER": "Họ",
-        "LANG": "NGÔN NGỮ",
-        "SEARCH_LANGUAGE": "Tìm kiếm ngôn ngữ...",
-        "SELECT_LANGUAGE": "Chọn ngôn ngữ",
-        "NO_LANGUAGE": "Không có ngôn ngữ",
-        "UPDATE_BTN": "Cập nhật",
-        "DELETE_TITLE": "Xóa tài khoản",
-        "DELETE_DESC": "Một khi tài khoản và dữ liệu bị xóa, sẽ không thể phục hồi chúng.",
-        "DELETE_LABEL": "XÓA TÀI KHOẢN VÀ DỮ LIỆU CỦA TÔI",
-        "DELETE_PLACEHOLDER": "Xác nhận email của bạn",
-        "DELETE_BTN": "Xóa",
-        "WRONG_CONFIRM_EMAIL": "Email xác nhận sai",
-        "DIALOG": {
-          "TITLE": "Xóa tài khoản",
-          "DESC": "Bạn sẽ mất quyền truy cập vào tất cả không gian làm việc và dự án của mình",
-          "WARNING": "Việc xóa tài khoản là vĩnh viễn và không thể hoàn tác, nhấn 'Xóa tài khoản của tôi' để xóa tài khoản.",
-          "BUTTON": "XÓA TÀI KHOẢN CỦA TÔI"
-        }
+    }
+  },
+  "SETTINGS": {
+    "ACCOUNT": {
+      "TITLE": "Tài khoản",
+      "DESC": "Quản lý tài khoản Super Productive của bạn. Mọi thay đổi đối với tài khoản của bạn sẽ được áp dụng cho tất cả không gian làm việc.",
+      "IMAGE": "HÌNH ẢNH HỒ SƠ",
+      "USERNAME": "TÊN ĐĂNG NHẬP",
+      "FIRST_NAME": "HỌ TÊN (TÙY CHỌN)",
+      "SURNAME": "HỌ (TÙY CHỌN)",
+      "USERNAME_PLACEHOLDER": "Tên đăng nhập",
+      "FIRST_NAME_PLACEHOLDER": "Tên",
+      "SURNAME_PLACEHOLDER": "Họ",
+      "LANG": "NGÔN NGỮ",
+      "SEARCH_LANGUAGE": "Tìm kiếm ngôn ngữ...",
+      "SELECT_LANGUAGE": "Chọn ngôn ngữ",
+      "NO_LANGUAGE": "Không có ngôn ngữ",
+      "UPDATE_BTN": "Cập nhật",
+      "DELETE_TITLE": "Xóa tài khoản",
+      "DELETE_DESC": "Một khi tài khoản và dữ liệu bị xóa, sẽ không thể phục hồi chúng.",
+      "DELETE_LABEL": "XÓA TÀI KHOẢN VÀ DỮ LIỆU CỦA TÔI",
+      "DELETE_PLACEHOLDER": "Xác nhận email của bạn",
+      "DELETE_BTN": "Xóa",
+      "WRONG_CONFIRM_EMAIL": "Email xác nhận sai",
+      "DIALOG": {
+        "TITLE": "Xóa tài khoản",
+        "DESC": "Bạn sẽ mất quyền truy cập vào tất cả không gian làm việc và dự án của mình",
+        "WARNING": "Việc xóa tài khoản là vĩnh viễn và không thể hoàn tác, nhấn 'Xóa tài khoản của tôi' để xóa tài khoản.",
+        "BUTTON": "XÓA TÀI KHOẢN CỦA TÔI"
       }
+    }
+  },
+  "THEME": {
+    "ADD_TASK": "Thêm nhiệm vụ",
+    "ADD_TASK_PENDING": "Đang tạo nhiệm vụ"
+  },
+  "SECURITY": {
+    "TITLE": "Bảo mật",
+    "DESC": "Bạn có thể thay đổi mật khẩu tại đây. Hãy nhớ rằng mật khẩu phải chứa ít nhất 6 ký tự, có ít nhất một chữ cái viết hoa và một chữ cái viết thường, và ít nhất một số.",
+    "WARNING": {
+      "FIRST": "Mật khẩu có thể được thay đổi",
+      "SECOND": "chỉ đối với các tài khoản được tạo qua mẫu trên trang web",
+      "THIRD": "Nếu bạn đã tạo tài khoản qua nút Google hoặc Github, ",
+      "FOURTH": "không thể thay đổi mật khẩu",
+      "FIFTH": "do phương pháp xác thực tài khoản khác."
     },
-    "THEME": {
-      "ADD_TASK": "Thêm nhiệm vụ",
-      "ADD_TASK_PENDING": "Đang tạo nhiệm vụ"
-    },
-    "SECURITY": {
-      "TITLE": "Bảo mật",
-      "DESC": "Bạn có thể thay đổi mật khẩu tại đây. Hãy nhớ rằng mật khẩu phải chứa ít nhất 6 ký tự, có ít nhất một chữ cái viết hoa và một chữ cái viết thường, và ít nhất một số.",
-      "WARNING": {
-        "FIRST": "Mật khẩu có thể được thay đổi",
-        "SECOND": "chỉ đối với các tài khoản được tạo qua mẫu trên trang web",
-        "THIRD": "Nếu bạn đã tạo tài khoản qua nút Google hoặc Github, ",
-        "FOURTH": "không thể thay đổi mật khẩu",
-        "FIFTH": "do phương pháp xác thực tài khoản khác."
+    "FORM": {
+      "CURRENT": {
+        "LABEL": "MẬT KHẨU HIỆN TẠI",
+        "PLACEHOLDER": "Mật khẩu hiện tại"
       },
-      "FORM": {
-        "CURRENT": {
-          "LABEL": "MẬT KHẨU HIỆN TẠI",
-          "PLACEHOLDER": "Mật khẩu hiện tại"
-        },
-        "NEW": {
-          "LABEL": "MẬT KHẨU MỚI",
-          "PLACEHOLDER": "Mật khẩu mới"
-        },
-        "REPEAT": {
-          "LABEL": "XÁC NHẬN MẬT KHẨU",
-          "PLACEHOLDER": "Xác nhận mật khẩu"
-        },
-        "BTN": "Thay đổi mật khẩu",
-        "BTN_PENDING": "Đang thay đổi mật khẩu"
-      }
+      "NEW": {
+        "LABEL": "MẬT KHẨU MỚI",
+        "PLACEHOLDER": "Mật khẩu mới"
+      },
+      "REPEAT": {
+        "LABEL": "XÁC NHẬN MẬT KHẨU",
+        "PLACEHOLDER": "Xác nhận mật khẩu"
+      },
+      "BTN": "Thay đổi mật khẩu",
+      "BTN_PENDING": "Đang thay đổi mật khẩu"
     }
   },
   "POMODORO": {
