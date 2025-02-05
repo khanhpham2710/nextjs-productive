@@ -2,16 +2,13 @@ import { prisma } from "@/lib/db";
 import { NextResponse } from "next/server";
 
 interface Params {
-  params: {
+  params: Promise<{
     mind_map_id: string;
-  };
+  }>;
 }
 
-export const GET = async (
-  request: Request,
-  { params }: Params
-) => {
-    const { mind_map_id } = await params;
+export const GET = async (request: Request, { params }: Params) => {
+  const { mind_map_id } = await params;
   const url = new URL(request.url);
   const userId = url.searchParams.get("userId");
 
@@ -49,7 +46,7 @@ export const GET = async (
     if (!mindMap)
       return NextResponse.json("ERRORS.NO_MIND_MAP_FOUND", { status: 200 });
     return NextResponse.json(mindMap, { status: 200 });
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (_) {
     return NextResponse.json("ERRORS.DB_ERROR", { status: 404 });
   }

@@ -2,9 +2,9 @@ import { prisma } from "@/lib/db";
 import { NextResponse } from "next/server";
 
 interface Params {
-    params: {
+    params: Promise<{
       task_id: string;
-    };
+    }>;
   }
   
   export const GET = async (

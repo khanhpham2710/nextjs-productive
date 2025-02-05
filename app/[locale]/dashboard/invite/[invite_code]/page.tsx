@@ -3,7 +3,17 @@ import { prisma } from "@/lib/db";
 import { NotifyType } from "@prisma/client";
 import { redirect } from "next/navigation";
 
-type ValidRole = "admin" | "editor" | "viewer";
+interface Params {
+  params: Promise<{
+    invite_code: string;
+  }>;
+  searchParams: Promise<{
+    role: string;
+    shareCode: ValidRole;
+  }>;
+}
+
+type ValidRole = "admin" | "editor" | "viewer" | null | undefined;
 
 interface InviteCodeValidWhere {
   inviteCode: string;
@@ -12,21 +22,13 @@ interface InviteCodeValidWhere {
   canEditCode?: string;
 }
 
-async function Workspace({
-  params,
-  searchParams,
-}: {
-  params: { invite_code: string };
-  searchParams: { [key: string]: string | undefined };
-}) {
+async function Workspace({ params, searchParams }: Params) {
   const { invite_code } = await params;
+  const { role, shareCode } = await searchParams;
+
   const session = await checkifUserCompletedOnboarding(
     `/dashboard/invite/${invite_code}`
   );
-
-  const role = searchParams.role as ValidRole;
-
-  const shareCode = searchParams.shareCode;
 
   if (!role || !shareCode || !invite_code)
     redirect("/dashboard/errors?error=no-data");

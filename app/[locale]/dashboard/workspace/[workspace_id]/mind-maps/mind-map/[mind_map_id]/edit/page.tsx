@@ -9,10 +9,10 @@ import checkifUserCompletedOnboarding from "@/lib/checkifUserCompletedOnboarding
 import { notFound, redirect } from "next/navigation";
 
 interface Params {
-  params: {
+  params: Promise<{
     workspace_id: string;
     mind_map_id: string;
-  };
+  }>;
 }
 
 export default async function EditMindMapPage({ params }: Params) {

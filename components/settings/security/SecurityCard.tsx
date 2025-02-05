@@ -5,7 +5,12 @@ import Warning from "@/components/ui/warning";
 import { useTranslations } from "next-intl";
 import ChangePassword from "./ChangePassword";
 
-function SecurityCard({provider} : {provider : string}) {
+interface Props {
+  provider?: string;
+}
+
+
+function SecurityCard({provider} : Props) {
     const t = useTranslations("SETTINGS.SECURITY");
     return (
       <Card className="bg-background border-none shadow-none">

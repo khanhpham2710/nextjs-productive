@@ -8,10 +8,10 @@ import checkifUserCompletedOnboarding from "@/lib/checkifUserCompletedOnboarding
 import { notFound } from "next/navigation";
 
 interface Params {
-  params: {
+  params: Promise<{
     workspace_id: string;
     task_id: string;
-  };
+  }>;
 }
 
 async function Task({ params }: Params) {

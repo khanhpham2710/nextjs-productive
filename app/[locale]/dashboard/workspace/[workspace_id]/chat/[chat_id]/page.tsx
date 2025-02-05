@@ -11,10 +11,10 @@ import InviteUsers from "@/components/invite/InviteUsers";
 import AddTaskShortcut from "@/components/addTaskShortcut/AddTaskShortcut";
 
 interface Params {
-  params: {
+  params: Promise<{
     workspace_id: string;
     chat_id: string;
-  };
+  }>;
 }
 
 const Chat = async ({ params }: Params) => {

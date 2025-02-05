@@ -14,6 +14,15 @@ import {
   useState,
 } from "react";
 
+interface PresencePayload {
+  online_at: string;
+  userId: string;
+}
+
+interface PresenceState {
+  [key: string]: PresencePayload[];
+}
+
 interface Props {
   children: React.ReactNode;
 }
@@ -90,8 +99,10 @@ export const UserActivityStatusProvider = ({ children }: Props) => {
         const activeUsers: UserActiveItemList[] = [];
         const inactiveUsers: UserActiveItemList[] = [];
 
-        for (const id in channel.presenceState()) {
-          userIds.push(channel.presenceState()[id][0].userId);
+        const state = channel.presenceState() as PresenceState;
+
+        for (const id in state) {
+          userIds.push(state[id][0].userId);
         }
 
         const uniqueIds = new Set(userIds);
