@@ -11,6 +11,8 @@ export interface Props {
 export default function TasksTab({ workspace, workspaceId }: Props) {
     const t = useTranslations("EDIT_WORKSPACE.TASKS");
 
+    console.log(workspace, workspaceId)
+
     return (
       <Card className="bg-background border-none shadow-none">
         <CardHeader>
