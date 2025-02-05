@@ -52,7 +52,7 @@ function Bottom() {
             href="/dashboard/settings"
             className={isSetting ? 'bg-blue-600' : ""}
           >
-            <Settings2 />
+            <Settings2 className={isSetting ? "text-white" : ""}/>
           </ActiveLink>
         </HoverCardTrigger>
         <HoverCardContent align="start">

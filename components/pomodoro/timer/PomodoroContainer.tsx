@@ -193,7 +193,7 @@ function PomodoroContainer({
                 setIsTimmerRunning((prev) => !prev);
               }}
               size={"lg"}
-              className="text-white text-2xl uppercase"
+              className="text-white dark:text-black text-2xl uppercase"
             >
               {isTimerRunning ? t("STOP") : t("START")}
             </Button>

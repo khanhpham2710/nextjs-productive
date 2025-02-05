@@ -404,7 +404,7 @@ export default function SettingsForm({
           </Button>
           <Button
             disabled={isResetting}
-            className="text-white w-full sm:w-auto"
+            className="text-white dark:text-black w-full sm:w-auto"
             type="submit"
           >
             {isUpdating ? (
