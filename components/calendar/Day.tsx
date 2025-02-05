@@ -47,7 +47,7 @@ export default function Day({ day, monthIndex, calendarItems }: Props) {
           <p
             className={`text-sm p-1 mt-1 text-center ${
               day.format("DD-MM-YY") === dayjs().format("DD-MM-YY")
-                ? "transition-colors duration-200 bg-primary text-white w-7 rounded-full"
+                ? "transition-colors duration-200 bg-primary text-white dark:text-black w-7 rounded-full"
                 : ""
             }`}
           >
