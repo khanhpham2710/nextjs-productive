@@ -19,7 +19,7 @@ export default async function page() {
     return (
       <>
         <DashboardHeader>
-          <AddTaskShortcut userId={session.user.id} />
+          <AddTaskShortcut />
         </DashboardHeader>
         <main className="flex flex-col gap-2 h-full items-center">
           <PomodoroContainer pomodoroSettings={pomodoroSettings} />

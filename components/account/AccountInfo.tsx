@@ -7,7 +7,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import axios, { AxiosError, AxiosResponse } from "axios";
 import { Session } from "next-auth";
-import { useSession } from "next-auth/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import React from "react";
@@ -22,6 +21,7 @@ import { cn } from "@/lib/utils";
 import { Check, ChevronsUpDown } from "lucide-react";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "../ui/command";
 import { LoadingState } from "../ui/loadingState";
+import { useSession } from "next-auth/react";
 
 interface Props {
   session: Session;
@@ -85,7 +85,8 @@ function AccountInfo({
       },
       mutationKey: ["profileEdit"],
     });
-  
+    
+
     const onSubmit = (data: AccountInfoSettingsSchema) => {
       editProfile(data);
     };

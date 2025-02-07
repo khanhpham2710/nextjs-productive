@@ -538,37 +538,37 @@
         "WARNING": "Việc xóa tài khoản là vĩnh viễn và không thể hoàn tác, nhấn 'Xóa tài khoản của tôi' để xóa tài khoản.",
         "BUTTON": "XÓA TÀI KHOẢN CỦA TÔI"
       }
-    }
-  },
-  "THEME": {
-    "ADD_TASK": "Thêm nhiệm vụ",
-    "ADD_TASK_PENDING": "Đang tạo nhiệm vụ"
-  },
-  "SECURITY": {
-    "TITLE": "Bảo mật",
-    "DESC": "Bạn có thể thay đổi mật khẩu tại đây. Hãy nhớ rằng mật khẩu phải chứa ít nhất 6 ký tự, có ít nhất một chữ cái viết hoa và một chữ cái viết thường, và ít nhất một số.",
-    "WARNING": {
-      "FIRST": "Mật khẩu có thể được thay đổi",
-      "SECOND": "chỉ đối với các tài khoản được tạo qua mẫu trên trang web",
-      "THIRD": "Nếu bạn đã tạo tài khoản qua nút Google hoặc Github, ",
-      "FOURTH": "không thể thay đổi mật khẩu",
-      "FIFTH": "do phương pháp xác thực tài khoản khác."
     },
-    "FORM": {
-      "CURRENT": {
-        "LABEL": "MẬT KHẨU HIỆN TẠI",
-        "PLACEHOLDER": "Mật khẩu hiện tại"
+    "THEME": {
+      "ADD_TASK": "Thêm nhiệm vụ",
+      "ADD_TASK_PENDING": "Đang tạo nhiệm vụ"
+    },
+    "SECURITY": {
+      "TITLE": "Bảo mật",
+      "DESC": "Bạn có thể thay đổi mật khẩu tại đây. Hãy nhớ rằng mật khẩu phải chứa ít nhất 6 ký tự, có ít nhất một chữ cái viết hoa và một chữ cái viết thường, và ít nhất một số.",
+      "WARNING": {
+        "FIRST": "Mật khẩu có thể được thay đổi",
+        "SECOND": "chỉ đối với các tài khoản được tạo qua mẫu trên trang web",
+        "THIRD": "Nếu bạn đã tạo tài khoản qua nút Google hoặc Github, ",
+        "FOURTH": "không thể thay đổi mật khẩu",
+        "FIFTH": "do phương pháp xác thực tài khoản khác."
       },
-      "NEW": {
-        "LABEL": "MẬT KHẨU MỚI",
-        "PLACEHOLDER": "Mật khẩu mới"
-      },
-      "REPEAT": {
-        "LABEL": "XÁC NHẬN MẬT KHẨU",
-        "PLACEHOLDER": "Xác nhận mật khẩu"
-      },
-      "BTN": "Thay đổi mật khẩu",
-      "BTN_PENDING": "Đang thay đổi mật khẩu"
+      "FORM": {
+        "CURRENT": {
+          "LABEL": "MẬT KHẨU HIỆN TẠI",
+          "PLACEHOLDER": "Mật khẩu hiện tại"
+        },
+        "NEW": {
+          "LABEL": "MẬT KHẨU MỚI",
+          "PLACEHOLDER": "Mật khẩu mới"
+        },
+        "REPEAT": {
+          "LABEL": "XÁC NHẬN MẬT KHẨU",
+          "PLACEHOLDER": "Xác nhận mật khẩu"
+        },
+        "BTN": "Thay đổi mật khẩu",
+        "BTN_PENDING": "Đang thay đổi mật khẩu"
+      }
     }
   },
   "POMODORO": {

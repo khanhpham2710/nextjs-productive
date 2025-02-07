@@ -1,16 +1,15 @@
+import AddTaskShortcut from "@/components/addTaskShortcut/AddTaskShortcut";
 import DashboardHeader from "@/components/header/DashboardHeader";
 import SecurityCard from "@/components/settings/security/SecurityCard";
-import checkifUserCompletedOnboarding from "@/lib/checkifUserCompletedOnboarding";
 
 async function SecuritySettings() {
-  const session = await checkifUserCompletedOnboarding("/dashboard/settings");
 
   return (
     <>
       <DashboardHeader>
-        {/* <AddTaskShortcut userId={session.user.id} /> */}
+        <AddTaskShortcut />
       </DashboardHeader>
-      <SecurityCard provider={session.user.provider}/>
+      <SecurityCard />
     </>
   );
 }

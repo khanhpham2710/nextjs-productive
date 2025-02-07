@@ -13,7 +13,7 @@ export default async function PomodoroSettings() {
     return (
       <>
         <DashboardHeader>
-          <AddTaskShortcut userId={session.user.id} />
+          <AddTaskShortcut />
         </DashboardHeader>
         <main className="flex flex-col gap-2 h-full">
           <SettingsContainer pomodoroSettings={pomodoroSettings} />

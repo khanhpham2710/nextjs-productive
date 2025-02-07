@@ -4,21 +4,20 @@ import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/
 import Warning from "@/components/ui/warning";
 import { useTranslations } from "next-intl";
 import ChangePassword from "./ChangePassword";
-
-interface Props {
-  provider?: string;
-}
+import { useSession } from "next-auth/react";
 
 
-function SecurityCard({provider} : Props) {
+function SecurityCard() {
     const t = useTranslations("SETTINGS.SECURITY");
+    const { data: session } = useSession()
+
     return (
       <Card className="bg-background border-none shadow-none">
         <CardHeader>
           <h1 className="text-2xl font-semibold leading-none tracking-tight">
             {t("TITLE")}
           </h1>
-          {!provider && <CardDescription className="text-base max-w-3xl break-words">
+          {!session!.user.provider && <CardDescription className="text-base max-w-3xl break-words">
             {t("DESC")}
           </CardDescription>}
         </CardHeader>
@@ -29,7 +28,7 @@ function SecurityCard({provider} : Props) {
             <span className="font-bold">{t("WARNING.FOURTH")} </span>
             {t("WARNING.FIFTH")}
           </Warning>
-          {!provider && <ChangePassword />}
+          {!session!.user.provider && <ChangePassword />}
         </CardContent>
       </Card>
     );

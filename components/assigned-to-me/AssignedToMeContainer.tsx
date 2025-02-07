@@ -8,15 +8,13 @@ import { useTranslations } from "next-intl";
 import LoadingScreen from "../common/LoadingScreen";
 import ClientError from "../error/ClientError";
 import AssignedToMeItem from "./AssignedToMeItem";
+import { useSession } from "next-auth/react";
 
-interface Props {
-  userId: string;
-}
-
-export default function AssignedToMeContainer({ userId }: Props){
+export default function AssignedToMeContainer(){
   const { currentType, workspaceFilterParam } = useGetAssignedToMeParams();
   const m = useTranslations("MESSAGES");
   const t = useTranslations("ASSIGNED_TO_ME");
+  const { data: session } = useSession()
 
   const {
     data: assignedInfo,
@@ -26,7 +24,7 @@ export default function AssignedToMeContainer({ userId }: Props){
   } = useQuery<AssignedToMeDataItem[], Error>({
     queryFn: async () => {
       const res = await fetch(
-        `/api/assigned_to/get?workspace=${workspaceFilterParam}&type=${currentType}&userId=${userId}`
+        `/api/assigned_to/get?workspace=${workspaceFilterParam}&type=${currentType}&userId=${session!.user.id}`
       );
 
       if (!res.ok) {
@@ -39,7 +37,7 @@ export default function AssignedToMeContainer({ userId }: Props){
     },
     queryKey: [
       "getAssignedToMeInfo",
-      userId,
+      session!.user.id,
       workspaceFilterParam,
       currentType,
     ],

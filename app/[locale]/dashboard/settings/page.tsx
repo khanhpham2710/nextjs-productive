@@ -23,7 +23,7 @@ const Settings = async () => {
   return (
     <>
       <DashboardHeader>
-        <AddTaskShortcut userId={session.user.id} />
+        <AddTaskShortcut />
       </DashboardHeader>
       <main>
         <Heading />

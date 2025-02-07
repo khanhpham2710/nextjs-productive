@@ -68,7 +68,7 @@ async function Workspace({ params }: Params) {
           <InviteUsers workspace={workspace} />
         )}
         {userRole !== "OWNER" && <LeaveWorkspace workspace={workspace} />}
-        <AddTaskShortcut userId={session.user.id} />
+        <AddTaskShortcut />
       </DashboardHeader>
       <main className="flex flex-col gap-2 w-full">
         <ShortcutContainer workspace={workspace} userRole={userRole} />

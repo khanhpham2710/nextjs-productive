@@ -11,17 +11,16 @@ import ClientError from "../error/ClientError";
 import NoStarredItems from "./NoStarredItems";
 import SortSelect from "./SortSelect";
 import StarredItem from "./StarredItem";
+import { useSession } from "next-auth/react";
 
-interface Props {
-    userId: string;
-  }
 
-export default function StarredContainer({ userId }: Props) {
+export default function StarredContainer() {
     const params = useSearchParams();
     const sortParam = params.get("sort");
     const sortType = sortParam && sortParam === "desc" ? "desc" : "asc";
   
     const t = useTranslations("STARRED");
+    const { data: session } = useSession()
   
     const {
       data: starredItems,
@@ -31,7 +30,7 @@ export default function StarredContainer({ userId }: Props) {
     } = useQuery({
       queryFn: async () => {
         const res = await fetch(
-          `/api/saved/get?userId=${userId}&sort=${sortType}`
+          `/api/saved/get?userId=${session!.user.id}&sort=${sortType}`
         );
   
         if (!res.ok) throw new Error();
@@ -39,7 +38,8 @@ export default function StarredContainer({ userId }: Props) {
         const data = (await res.json()) as StarredItemType[];
         return data;
       },
-      queryKey: ["getStarredItems", userId, sortType],
+      queryKey: ["getStarredItems", session!.user.id, sortType],
+      staleTime: 30000
     });
   
     if (isLoading) return <LoadingScreen />;
@@ -64,7 +64,7 @@ export default function StarredContainer({ userId }: Props) {
               key={starredItem.id}
               item={starredItem}
               sortType={sortType}
-              userId={userId}
+              userId={session!.user.id}
             />
           ))}
         </CardContent>

@@ -1,7 +1,6 @@
 import AddTaskShortcut from "@/components/addTaskShortcut/AddTaskShortcut";
 import DashboardHeader from "@/components/header/DashboardHeader";
 import StarredContainer from "@/components/starred/StarredContainer";
-import checkifUserCompletedOnboarding from "@/lib/checkifUserCompletedOnboarding";
 import { Metadata } from "next";
 import { headers } from "next/headers";
 
@@ -15,15 +14,14 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 async function Starred() {
-  const session = await checkifUserCompletedOnboarding("/dashboard/starred");
 
   return (
     <>
       <DashboardHeader>
-        <AddTaskShortcut userId={session.user.id} />
+        <AddTaskShortcut />
       </DashboardHeader>
       <main>
-        <StarredContainer userId={session.user.id} />
+        <StarredContainer />
       </main>
     </>
   );

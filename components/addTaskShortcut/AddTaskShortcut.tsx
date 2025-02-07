@@ -31,15 +31,15 @@ import { LoadingState } from "../ui/loadingState";
 import MainTab from "./MainTab";
 import ClientError from "../error/ClientError";
 import Workspaces from "./Workspaces";
+import { useSession } from "next-auth/react";
 
-interface Props {
-  userId: string;
-}
 
-function AddTaskShortcut({ userId }: Props) {
+function AddTaskShortcut() {
   const [open, setOpen] = useState(false);
   const m = useTranslations("MESSAGES");
   const t = useTranslations("TASK_SHORTCUT");
+  const { data : session } = useSession()
+
 
   const {
     data: workspaces,
@@ -123,7 +123,7 @@ function AddTaskShortcut({ userId }: Props) {
     },
 
     onSuccess: async (data: Task) => {
-      await queryclient.refetchQueries({ queryKey: ["getCalendarItems", userId] });
+      await queryclient.refetchQueries({ queryKey: ["getCalendarItems", session!.user.id] });
 
       toast({
         title: m("SUCCESS.TASK_ADDED"),

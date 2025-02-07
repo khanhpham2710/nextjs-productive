@@ -75,7 +75,7 @@ const Chat = async ({ params }: Params) => {
         {(userRole === "ADMIN" || userRole === "OWNER") && (
           <InviteUsers workspace={workspace} />
         )}
-        <AddTaskShortcut userId={session.user.id} />
+        <AddTaskShortcut />
       </DashboardHeader>
       <main className="h-full w-full max-h-fit">
         <ChatContainer

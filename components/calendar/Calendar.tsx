@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useCallback, useEffect, useState } from "react";
 import dayjs from "dayjs";
@@ -9,67 +9,66 @@ import ClientError from "../error/ClientError";
 import CalendarHeader from "./CalendarHeader";
 import { CalendarItem } from "@/types/extended";
 import CalendarGrid from "./CalendarGrid";
+import { useSession } from "next-auth/react";
 
-interface Props {
-    userId: string;
+function Calendar() {
+  const [currMonth, setCurrMonth] = useState(getMonth());
+  const [monthIndex, setMonthIndex] = useState(dayjs().month());
+  const { data: session } = useSession()
+
+  useEffect(() => {
+    setCurrMonth(getMonth(monthIndex));
+  }, [monthIndex]);
+
+  const changeMonthHandler = useCallback((change: "next" | "prev") => {
+    if (change === "next") setMonthIndex((prev) => prev + 1);
+    else setMonthIndex((prev) => prev - 1);
+  }, []);
+
+  const resetMonthHandler = useCallback(() => {
+    if (monthIndex === dayjs().month()) return;
+    setMonthIndex(dayjs().month());
+  }, [monthIndex]);
+
+  const {
+    data: calendarItems,
+    isLoading,
+    isError,
+  } = useQuery({
+    queryFn: async () => {
+      const res = await fetch(`/api/calendar/get?userId=${session!.user.id}`);
+
+      if (!res.ok) throw new Error();
+
+      const data = (await res.json()) as CalendarItem[];
+      return data;
+    },
+    queryKey: ["getCalendarItems", session],
+  });
+
+  if (isLoading) {
+    return <LoadingScreen />;
   }
 
-function Calendar({ userId }: Props) {
-    const [currMonth, setCurrMonth] = useState(getMonth());
-    const [monthIndex, setMonthIndex] = useState(dayjs().month());
-
-    useEffect(() => {
-      setCurrMonth(getMonth(monthIndex));
-    }, [monthIndex]);
-  
-    const changeMonthHandler = useCallback((change: "next" | "prev") => {
-      if (change === "next") setMonthIndex((prev) => prev + 1);
-      else setMonthIndex((prev) => prev - 1);
-    }, []);
-  
-    const resetMonthHandler = useCallback(() => {
-      if (monthIndex === dayjs().month()) return;
-      setMonthIndex(dayjs().month());
-    }, [monthIndex]);
-  
-    const {
-      data: calendarItems,
-      isLoading,
-      isError,
-    } = useQuery({
-      queryFn: async () => {
-        const res = await fetch(`/api/calendar/get?userId=${userId}`);
-  
-        if (!res.ok) throw new Error();
-  
-        const data = (await res.json()) as CalendarItem[];
-        return data;
-      },
-      queryKey: ["getCalendarItems", userId],
-    });
-  
-    if (isLoading) return <LoadingScreen />;
-  
-    if (isError)
-      return (
-        <ClientError hrefToGoOnReset="/dashboard/calendar" message={"error"} />
-      );
-  
-  
+  if (isError)
     return (
-      <div className="w-full h-full flex flex-col gap-4 items-center">
-        <CalendarHeader
-          monthIndex={monthIndex}
-          onChangeMonthHandler={changeMonthHandler}
-          onResetMonthHandler={resetMonthHandler}
-        />
-        <CalendarGrid
-          currMonth={currMonth}
-          monthIndex={monthIndex}
-          calendarItems={calendarItems!}
-        />
-      </div>
+      <ClientError hrefToGoOnReset="/dashboard/calendar" message={"error"} />
     );
+
+  return (
+    <div className="w-full h-full flex flex-col gap-4 items-center">
+      <CalendarHeader
+        monthIndex={monthIndex}
+        onChangeMonthHandler={changeMonthHandler}
+        onResetMonthHandler={resetMonthHandler}
+      />
+      <CalendarGrid
+        currMonth={currMonth}
+        monthIndex={monthIndex}
+        calendarItems={calendarItems!}
+      />
+    </div>
+  );
 }
 
-export default Calendar
+export default Calendar;

@@ -2,8 +2,14 @@ import { Sidebar } from "@/components/sidebar/Sidebar";
 import { ToggleSidebarProvider } from "@/context/ToggleSidebar";
 import { UserActivityStatusProvider } from "@/context/UserActivityStatus";
 import { UserEditableWorkspacesProvider } from "@/context/UserEditableWorkspaces";
+import { auth } from "@/lib/auth";
+import { redirect } from "next/navigation";
 
-const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
+const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
+  const session = await auth();
+
+  if (!session || !session.user) redirect("/login");
+
   return (
     <UserActivityStatusProvider>
       <UserEditableWorkspacesProvider>

@@ -56,7 +56,7 @@ export default async function MindMapPage({ params }: Params) {
       <AutoSaveMindMapProvider>
         <DashboardHeader showBackBtn hideBreadCrumb>
           {canEdit && <InviteUsers workspace={workspace} />}
-          <AddTaskShortcut userId={session.user.id} />
+          <AddTaskShortcut />
         </DashboardHeader>
         <main className="flex flex-col gap-2 h-full mb-4">
           <MindMapPreviewCardWrapper
