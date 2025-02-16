@@ -173,10 +173,16 @@ function PomodoroContainer({
       </CardHeader>
       <CardContent className="flex flex-col justify-center items-center mt-4 gap-4">
         {!isFinish ? (
-            <p>
-              {t("INTERVAL")}: <span>{completedIntervals}/{longBreakInterval}</span>{" "}
-              {t("ROUNDS")}: <span>{currentRounds}/{rounds}</span>{" "}
-            </p>
+          <p>
+            {t("INTERVAL")}:{" "}
+            <span>
+              {completedIntervals}/{longBreakInterval}
+            </span>{" "}
+            {t("ROUNDS")}:{" "}
+            <span>
+              {currentRounds}/{rounds}
+            </span>{" "}
+          </p>
         ) : (
           <Button
             onClick={resetPomodoro}

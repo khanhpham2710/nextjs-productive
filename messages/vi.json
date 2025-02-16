@@ -597,8 +597,8 @@
           "DESC": "Đặt số vòng hoàn thành một phiên làm việc đầy đủ (một vòng kết thúc sau khi hết thời gian nghỉ dài)"
         },
         "LONG_BREAKS_INTERVAL": {
-          "LABEL": "Khoảng cách giữa các lần nghỉ dài: {value}",
-          "DESC": "Giá trị càng lớn, một vòng sẽ kéo dài lâu hơn (khoảng cách dài hơn giữa các lần nghỉ dài)"
+          "LABEL": "Số đợt trong 1 vòng: {value}",
+          "DESC": "Giá trị càng lớn, một vòng sẽ kéo dài lâu hơn (khoảng thời gian giữa các đợt nghỉ dài lâu hơn)"
         },
         "ALARM": {
           "LABEL": "Âm thanh thông báo",

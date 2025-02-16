@@ -172,7 +172,7 @@ export default function MessagesContainer({ chatId, sessionUserId }: Props) {
     <div
       ref={scrollRef}
       onScroll={handleOnScroll}
-      className="h-full flex flex-col gap-2 px-4 py-2 overflow-y-auto scrollbar-thin scrollbar-thumb-secondary scrollbar-track-background"
+      className="h-full flex flex-col gap-2 px-4 py-2 overflow-y-auto scrollbar-thin scrollbar-thumb-secondary scrollbar-track-background max-h-96"
     >
       {hasMore && (
         <LoadMoreMessages chatId={chatId} sessionUserId={sessionUserId} />
