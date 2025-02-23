@@ -526,6 +526,7 @@
       "SELECT_LANGUAGE": "Chọn ngôn ngữ",
       "NO_LANGUAGE": "Không có ngôn ngữ",
       "UPDATE_BTN": "Cập nhật",
+      "PENDING_BTN": "Đang cập nhập",
       "DELETE_TITLE": "Xóa tài khoản",
       "DELETE_DESC": "Một khi tài khoản và dữ liệu bị xóa, sẽ không thể phục hồi chúng.",
       "DELETE_LABEL": "XÓA TÀI KHOẢN VÀ DỮ LIỆU CỦA TÔI",

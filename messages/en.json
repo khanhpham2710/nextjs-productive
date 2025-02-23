@@ -526,6 +526,7 @@
       "SELECT_LANGUAGE": "Select language",
       "NO_LANGUAGE": "NO language",
       "UPDATE_BTN": "Update",
+      "PENDING_BTN": "Updating",
       "DELETE_TITLE": "Delete account",
       "DELETE_DESC": "Once the account and data are deleted, there is no way to recover them.",
       "DELETE_LABEL": "DELETE MY ACCOUNT AND DATA",
